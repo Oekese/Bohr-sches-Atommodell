@@ -1,0 +1,99 @@
+% Language and Encoding
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+
+% Math Packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{physics}
+\usepackage{mathtools}
+
+% Figures and Graphics
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{multicol}
+\pgfplotsset{compat=1.17}
+
+% Table Packages
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Quantum Physics Notes},
+    pdfpagemode=FullScreen,
+}
+
+% Page Layout
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+% Theorem Environments
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\usepackage{xcolor, chemfig, mhchem}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{3d, calc,angles,decorations.markings,quotes,positioning}
+\definecolor{jade}{HTML}{00A36C}
+\definecolor{crimson}{HTML}{DC143C}
+\definecolor{pinke}{HTML}{FF1493}
+\definecolor{babyblau}{HTML}{0096FF}
+\usepackage[most]{tcolorbox}
+\newtcolorbox{bx}[2][]{
+    lower separated=false,
+    enhanced,
+	boxrule=0.75pt,
+	rounded corners,  % Square edges
+	colframe=black,  % Set the color of the outline
+	colback=blue!5,  % Set the color of the fill
+	coltext=black,
+    top=0pt,
+	#1,
+    breakable,
+}
+\newtcolorbox{bxzwei}[2][]{
+	boxrule=0.75pt,
+    rounded corners,  % Square edges
+	colframe=black,  % Set the color of the outline
+	colback=blue!5,  % Set the color of the fill
+	coltext=black,
+    top=0pt,
+    bottom=1.5pt,
+	#1,
+    breakable,
+}
+\newtcolorbox{qqw}[2][]{%
+	boxrule=0.75pt,
+	rounded corners,  % Square edges
+	colframe=purple,  % Set the color of the outline
+	colback=black,  % Set the color of the fill
+	coltext=white,
+    top=0pt,    
+    bottom=1.5pt,
+	#1,
+}
+\newcommand{\highlight}[1]{\textcolor{jade}{#1}}
+\newcommand{\vektor}[3]{\begin{pmatrix} #1 \\ #2 \\ #3\end{pmatrix}}
+\pgfplotsset{compat=1.18}
+
+\allowdisplaybreaks
+
+\numberwithin{equation}{section}
+
